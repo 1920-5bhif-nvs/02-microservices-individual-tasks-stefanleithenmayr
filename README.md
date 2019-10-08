@@ -65,7 +65,7 @@ Das erste Quarkus Projekt läuft auf dem Port 8080, und das zweite auf 8082, wei
 
 
 ## Metrics 
-<code>@Counted(name = "requestAmount", description = "Amount of Requests")
-    @Timed(name = "responseTimer", description = "Response Time", unit = MetricUnits.MILLISECONDS)
-    @Retry(maxRetries = 2)</code>
+<code>@Counted(name = "requestAmount", description = "Amount of Requests")<br>
+    @Timed(name = "responseTimer", description = "Response Time", unit = MetricUnits.MILLISECONDS)<br>
+    @Retry(maxRetries = 2)<br></code>
 * REST - Url: `http://localhost:8082/metrics/application`
