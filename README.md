@@ -36,8 +36,8 @@ Microprofile Metrics zeigt an wie oft ein Request durchgeführt wurde, bzw. kann
 `@Retry` wie oft soll der Request wiederholt werden
 `@Fallback`: Alternative Methode die ausgeführt wird falls der Request nicht durchgeführt werden kann
 `@Timed` über Business Methoden zeigt die Zeit an wie lange eine Methode benötigt hat
-<img src="images/metrics1.jpg">
-<img src="images/metrics2.jpg">
+<img src="images/metrics1.png">
+<img src="images/metrics2.png">
 
 Eine Softwaremetrik, oder kurz Metrik, ist eine (meist mathematische) Funktion, die eine Eigenschaft von Software in einen Zahlenwert, auch Maßzahl genannt, abbildet. Hierdurch werden formale Vergleichs- und Bewertungsmöglichkeiten geschaffen
 
@@ -49,7 +49,7 @@ Vergleichbar mit OpenAPI (Swagger)<br>
 
 ExceptionHandling
 
-<img src="images/exception.jpg">
+<img src="images/exception.png">
 
 Microprofile Metrics 
 https://quarkus.io/guides/metrics-guide
