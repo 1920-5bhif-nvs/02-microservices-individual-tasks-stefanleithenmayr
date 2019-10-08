@@ -62,3 +62,10 @@ Alternativ kann auch über die Maven Lifecycles kompiliert werden (siehe Tutoria
 Insgesamt sind in diesem Repository zwei Quarkus - Projekte, wobei der zewite Service auf den ersten zugreift. Man kann sich das ganze in meinem Beispiel als Autohaus und Kunde der auf der Website schaut, welche Autos zu kaufen sind, vorstellen.
 
 Das erste Quarkus Projekt läuft auf dem Port 8080, und das zweite auf 8082, weil es sonst zu Überschneidungen kommt.
+
+
+## Metrics 
+<code>@Counted(name = "requestAmount", description = "Amount of Requests")
+    @Timed(name = "responseTimer", description = "Response Time", unit = MetricUnits.MILLISECONDS)
+    @Retry(maxRetries = 2)</code>
+* REST - Url: `http://localhost:8082/metrics/application`
