@@ -64,8 +64,7 @@ Insgesamt sind in diesem Repository zwei Quarkus - Projekte, wobei der zewite Se
 Das erste Quarkus Projekt läuft auf dem Port 8080, und das zweite auf 8082, weil es sonst zu Überschneidungen kommt.
 
 
-## Metrics 
-
+## Metrics (https://quarkus.io/guides/metrics-guide)
 ``` 
     @Counted(name = "requestAmount", description = "Amount of Requests")
     @Timed(name = "responseTimer", description = "Response Time", unit = MetricUnits.MILLISECONDS)
@@ -73,3 +72,22 @@ Das erste Quarkus Projekt läuft auf dem Port 8080, und das zweite auf 8082, wei
 ```
   
 * REST - Url: `http://localhost:8082/metrics/application`
+
+## Health Check (https://quarkus.io/guides/health-guide)
+Dependency:
+```
+<dependency>
+  <groupId>io.quarkus</groupId>
+  <artifactId>quarkus-smallrye-health</artifactId>
+</dependency>
+```
+
+* REST - Url: `http://localhost:8082/health/live`
+
+## Prometheus
+
+Prometheus wird zum Monitoren eingesetzt. Prometheus sollte demnächst eine eine enge Integration von OpenShift haben. Mit Prometheus kann man Metriken sammeln und anzeigen. (numerische Zeitreihen). Kein klassisches Tool zum Anzeigen von Fehlermeldungen, sondern eher die Anzahl an Fehlermeldungen.
+
+## Istio
+
+Je umfangreicher und komplexer eine Microservice Architektur wird, desto unübersichtlicher wird es. So etwas nennt man dann "Service Mesh". Das Tool Istio soll dazu dienen, bei vielen kleinen Microservices denn Überblick zu behalten.
