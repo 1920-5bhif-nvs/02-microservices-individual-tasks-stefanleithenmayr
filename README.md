@@ -91,3 +91,10 @@ Prometheus wird zum Monitoren eingesetzt. Prometheus sollte demnächst eine eine
 ## Istio
 
 Je umfangreicher und komplexer eine Microservice Architektur wird, desto unübersichtlicher wird es. So etwas nennt man dann "Service Mesh". Das Tool Istio soll dazu dienen, bei vielen kleinen Microservices denn Überblick zu behalten.
+
+## @CircuitBreaker
+Ein CircuitBreaker limitiert die Anzahl an Fehlern. (https://quarkus.io/guides/fault-tolerance-guide)
+
+## @Bulkhead
+Bulkhead limitiert die Anzahl der parallen Aufrufen einer Rest Methode.
+(https://stackoverflow.com/questions/30391809/what-is-bulkhead-pattern-used-by-hystrix)
