@@ -33,9 +33,9 @@ Inhalt des Videos (Projektbezug)
 
 Microprofile Metrics zeigt an wie oft ein Request durchgeführt wurde, bzw. kann man sich den HTTP Code mitanzeigen lassen
 
-`@Retry` wie oft soll der Request wiederholt werden
-`@Fallback`: Alternative Methode die ausgeführt wird falls der Request nicht durchgeführt werden kann
-`@Timed` über Business Methoden zeigt die Zeit an wie lange eine Methode benötigt hat
+`@Retry` wie oft soll der Request wiederholt werden<br>
+`@Fallback`: Alternative Methode die ausgeführt wird falls der Request nicht durchgeführt werden kann<br>
+`@Timed` über Business Methoden zeigt die Zeit an wie lange eine Methode benötigt hat<br>
 <img src="images/metrics1.png">
 <img src="images/metrics2.png">
 
