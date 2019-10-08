@@ -8,4 +8,4 @@ mvn io.quarkus:quarkus-maven-plugin:0.21.1:create \
     -DclassName="at.htl.services.car.controller.EmployeeController" \
     -Dpath="/cardealer" \
     -Dextensions="resteasy-jackson, hibernate-validator"
-    ```
+```
